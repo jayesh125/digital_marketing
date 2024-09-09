@@ -216,7 +216,7 @@ const slider = {
       
       item.classList.value === 'item-header' ? seconds = .015 : seconds = .007;
 
-      children.forEach(child => { // iterate through .vertical-part(s) and style b element
+      children.forEach(child => { 
         if (child.classList) {
           item.parentNode.classList.contains('active') ? delay = count * seconds + activeDelay : delay = count * seconds;
           child.firstElementChild.style.transitionDelay = `${delay}s`; // b element
