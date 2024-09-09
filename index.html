@@ -31,245 +31,465 @@
 
 <body>
 
-    <!---------------------------------------------------
-        Wrapper Start
-     ----------------------------------------------------->
     <div class="wrapper">
 
-        <!---------------------------------------------------
-              Header Start
-         ----------------------------------------------------->
-        <header id="home" class="padding-x">
+        <nav class="navbar flex">
+            <div class="logo">
+                <img src="assets/images/logo.png" alt="logo">
+            </div>
 
-            <!---------------------------------------------------
-              Nav Start
-            ----------------------------------------------------->
-            <nav class="navbar flex">
-                <div class="logo-box">
-                    <!-- <img src="assets/images/logo.png" alt=""> -->
-                    <h1 class="logo">HS <span class="red">TECH</span></h1>
+            <input type="checkbox" id="checkbox">
+
+            <div class="menubar">
+                <ul class="flex">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#courses">Courses</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <label class="toggle" for="checkbox">&#8801;</label>
+
+        </nav>
+
+        <section class="carousel-container">
+            <div class="carousel-slide active">
+                <div class="banner-left">
+                    <h1>Expand Your Reach with<br><span class="animated-text" id="animated-text-1"></span><br>
+                    </h1>
+                    <p>Our solutions help you stay competitive in the rapidly changing world of digital
+                        marketing.</p>
+                    <button class="common-btn">Read More</button>
+                    <button class="common-btn-2">Contact Us</button>
                 </div>
-
-                <input type="checkbox" id="checkbox">
-
-                <div class="menubar">
-                    <ul class="flex">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#courses">Courses</a></li>
-                        <li><a href="#contact">Contact Us</a></li>
-                    </ul>
+                <div class="banner-right">
+                    <img src="assets/images/img3.png" alt="Banner-img">
                 </div>
+            </div>
 
-                <!-- <div class="search-box flex">
-                    <input type="text" placeholder="Search...">
-                    <img src="assets/images/search-icon.png" alt="search">
-                </div> -->
-
-                <label class="toggle" for="checkbox">&#8801;</label>
-            </nav>
-
-            <!---------------------------------------------------
-               Nav End
-            ----------------------------------------------------->
-
-            <!---------------------------------------------------
-               Banner Section Start
-            ----------------------------------------------------->
-            <section class="carousel-container">
-                <div class="carousel">
-                    <!-- Slide 1 -->
-                    <div class="carousel-slide active">
-                        <div class="banner-left">
-                            <h1>Expand Your Reach with<br><span class="animated-text" id="animated-text-1"></span><br>
-                            </h1>
-                            <p>Our solutions help you stay competitive in the rapidly changing world of digital
-                                marketing.</p>
-                            <button class="common-btn">Read More</button>
-                            <button class="common-btn-2">Get in touch</button>
-                        </div>
-                        <div class="banner-right">
-                            <img src="assets/images/img2.png" alt="Banner-img">
-                        </div>
-                    </div>
-
-                    <!-- Slide 2 -->
-                    <div class="carousel-slide">
-                        <div class="banner-left">
-                            <h1>Reach More Customers<br><span class="animated-text" id="animated-text-2"></span><br>
-                            </h1>
-                            <p>We provide innovative digital marketing solutions for your growing business.</p>
-                            <button class="common-btn">Learn More</button>
-                            <button class="common-btn-2">Contact Us</button>
-                        </div>
-                        <div class="banner-right">
-                            <img src="assets/images/img2.png" alt="Banner-img">
-                        </div>
-                    </div>
-
-                    <!-- Slide 3 -->
-                    <div class="carousel-slide">
-                        <div class="banner-left">
-                            <h1>Boost Your Brand with<br><span class="animated-text" id="animated-text-3"></span><br>
-                            </h1>
-                            <p>Explore our expert strategies to improve your brand's visibility.</p>
-                            <button class="common-btn">Explore More</button>
-                            <button class="common-btn-2">Get Started</button>
-                        </div>
-                        <div class="banner-right">
-                            <img src="assets/images/img2.png" alt="Banner-img">
-                        </div>
-                    </div>
+            <!-- Slide 2 -->
+            <div class="carousel-slide">
+                <div class="banner-left">
+                    <h1>Reach More Customers<br><span class="animated-text" id="animated-text-2"></span><br>
+                    </h1>
+                    <p>We provide innovative digital marketing solutions for your growing business.</p>
+                    <button class="common-btn">Learn More</button>
+                    <button class="common-btn-2">Contact Us</button>
                 </div>
+                <div class="banner-right">
+                    <img src="assets/images/img3.png" alt="Banner-img">
+                </div>
+            </div>
 
-                <!-- Carousel Controls -->
-                <button id="prev" class="carousel-control">❮</button>
-                <button id="next" class="carousel-control">❯</button>
-            </section>
+            <!-- Slide 3 -->
+            <div class="carousel-slide">
+                <div class="banner-left">
+                    <h1>Boost Your Brand with<br><span class="animated-text" id="animated-text-3"></span><br>
+                    </h1>
+                    <p>Explore our expert strategies to improve your brand's visibility.</p>
+                    <button class="common-btn">Learn More</button>
+                    <button class="common-btn-2">Get Started</button>
+                </div>
+                <div class="banner-right">
+                    <img src="assets/images/img3.png" alt="Banner-img">
+                </div>
+            </div>
+
+            <!-- Carousel Controls -->
+            <button id="prev" class="carousel-control">❮</button>
+            <button id="next" class="carousel-control">❯</button>
+        </section>
 
 
-            <!---------------------------------------------------
-               Banner Section End
-            ----------------------------------------------------->
-
-        </header>
-        <!---------------------------------------------------
-              Header End
-         ----------------------------------------------------->
-
-
-        <!---------------------------------------------------
-            Services Section Start
-        ----------------------------------------------------->
         <section id="services" class="max-width">
             <!-- Section Header -->
             <div class="section-header">
                 <h1>Services</h1>
             </div>
 
-            <!-- Services and Slider -->
+            <!-- Services Section -->
             <div class="services-row flex">
-                <!-- Service 1 -->
                 <div class="service-col-1">
                     <h1>Anything you need,<br> <span>we've got you covered</span></h1>
                     <button class="common-btn">Explore Now</button>
                 </div>
 
-                <!-- Slider Section -->
-                <div class="slider">
-                    <div class="slide-track">
-                        <!-- Original Slides -->
-                        <div class="slide">
+                <div class="carousel-service">
+                    <div class="carousel-wrapper">
+                        <div class="card">
                             <img src="assets/images/icon3.png" alt="Web Design" />
                             <h2>Web Designing</h2>
                             <p>We provide the best web development services with responsive design and SEO optimization.
                             </p>
                         </div>
-                        <div class="slide">
-                            <img src="assets/images/icon2.png" alt="App Development" />
-                            <h2>App Development</h2>
-                            <p>Best-in-class app development services with a focus on user experience and scalability.
-                            </p>
+                        <div class="card">
+                            <img src="assets/images/icon1.png" alt="Social Media Management" />
+                            <h2>Social Media Management</h2>
+                            <p>Boost your brand's presence with dedicated social media strategies, customized designs,
+                                and insightful analytics.</p>
                         </div>
-                        <div class="slide">
-                            <img src="assets/images/icon3.png" alt="SEO Optimization" />
-                            <h2>SEO Optimization</h2>
-                            <p>Enhance your website's visibility with our proven SEO strategies.</p>
+
+                        <div class="card">
+                            <img src="assets/images/icon2.png" alt="YouTube Marketing" />
+                            <h2>YouTube Marketing</h2>
+                            <p>Reach a larger audience with engaging video content, targeted campaigns, and enhanced
+                                brand visibility on YouTube.</p>
                         </div>
-                        <div class="slide">
-                            <img src="assets/images/icon2.png" alt="Digital Marketing" />
-                            <h2>Digital Marketing</h2>
-                            <p>Reach your target audience with our expert digital marketing services.</p>
+
+                        <div class="card">
+                            <img src="assets/images/perfomence_m.png" alt="Performance Marketing" />
+                            <h2>Performance Marketing</h2>
+                            <p>Drive conversions and business growth with data-driven lead generation, app installs, and
+                                brand awareness campaigns.</p>
                         </div>
-                        <!-- Duplicate Slides for Seamless Loop -->
-                        <div class="slide">
-                            <img src="assets/images/icon3.png" alt="Web Design" />
-                            <h2>Web Designing</h2>
-                            <p>We provide the best web development services with responsive design and SEO optimization.
-                            </p>
+
+                        <div class="card">
+                            <img src="assets/images/logo_design.png" alt="Logo Designing" />
+                            <h2>Logo Designing</h2>
+                            <p>Create a distinctive, professional logo that reflects your brand’s identity and mission
+                                with custom designs.</p>
                         </div>
-                        <div class="slide">
-                            <img src="assets/images/icon2.png" alt="App Development" />
-                            <h2>App Development</h2>
-                            <p>Best-in-class app development services with a focus on user experience and scalability.
-                            </p>
+
+                        <div class="card">
+                            <img src="assets/images/business_card.jpg" alt="Business Card Design" />
+                            <h2>Business Card Design</h2>
+                            <p>Design premium, custom business cards that represent your brand’s professionalism and
+                                values.</p>
+                        </div>
+
+                        <div class="card">
+                            <img src="assets/images/graphic.jpg" alt="Graphic Design" />
+                            <h2>Graphic Design</h2>
+                            <p>Transform your vision into reality with custom logos, brochures, and creative branding
+                                solutions.</p>
+                        </div>
+
+                        <div class="card">
+                            <img src="assets/images/seo1.png" alt="SEO" />
+                            <h2>Search Engine Optimization</h2>
+                            <p>Boost organic traffic and accelerate growth with tailored SEO strategies that ensure
+                                online visibility and success.</p>
+                        </div>
+
+                        <div class="card">
+                            <img src="assets/images/paid_ad.png" alt="Paid Ads" />
+                            <h2>Paid Ads & Campaigns</h2>
+                            <p>Run targeted, optimized advertising campaigns to reach your audience and drive results on
+                                multiple platforms.</p>
+                        </div>
+
+                        <div class="card">
+                            <img src="assets/images/video_image.png" alt="Photography & Videography" />
+                            <h2>Photography & Videography</h2>
+                            <p>Capture striking visuals with professional photography and videography that tell your
+                                brand’s story.</p>
+                        </div>
+
+                        <div class="card">
+                            <img src="assets/images/branding.jpg" alt="Branding" />
+                            <h2>Branding</h2>
+                            <p>Stand out from the crowd with unique branding that resonates with your target audience
+                                and leaves a lasting impression.</p>
+                        </div>
+
+                        <div class="card">
+                            <img src="assets/images/content_m.jpg" alt="Content Marketing" />
+                            <h2>Content Marketing</h2>
+                            <p>Create compelling, engaging content that boosts your online presence and drives audience
+                                engagement.</p>
+                        </div>
+
+                        <div class="card">
+                            <img src="assets/images/graphic.jpg" alt="WhatsApp Bulk Messaging" />
+                            <h2>WhatsApp Bulk Messaging</h2>
+                            <p>Efficiently reach a large audience with personalized bulk messages, ensuring high
+                                engagement and delivery rates.</p>
+                        </div>
+
+                        <div class="card">
+                            <img src="assets/images/icon15.png" alt="Email Marketing" />
+                            <h2>Email Marketing</h2>
+                            <p>Maximize outreach with targeted email campaigns that drive engagement and boost
+                                conversions.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- About-Section -->
+        <section id="about" class="max-width padding-x">
 
-        <!---------------------------------------------------
-            Services Section End
-        ----------------------------------------------------->
-
-
-        <!---------------------------------------------------
-            About Section Start
-        ----------------------------------------------------->
-        <section id="about" class="max-width padding-y padding-x">
-
-            <!---------------------------------------------------
-                 About Section Header
-            ----------------------------------------------------->
+            <!-- Section Header -->
             <div class="section-header">
-                <h1>About</h1>
+                <h1>About Us</h1>
             </div>
 
+            <section class="counters">
+                <div class="container">
+                    <div class="counter-box">
 
+                        <div class="counter-plus">
+                            <div class="counter" data-target="100">0</div>
+                            <div class="plus">+</div>
+                        </div>
+                        <h1>Projects</h1>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About Content Row -->
             <div class="about-row flex">
 
-                <!---------------------------------------------------
-                   About Left
-                ----------------------------------------------------->
+                <!-- About Left (Image) -->
                 <div class="about-left">
-                    <img src="assets/images/img1.png" alt="">
+                    <img src="assets/images/logo.jpg" alt="HS Tech Logo">
                 </div>
 
-                <!---------------------------------------------------
-                   About Right
-                ----------------------------------------------------->
+                <!-- About Right (Text) -->
                 <div class="about-right">
-                    <h2>Some Fine words <br> about us</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, odit blanditiis non at
-                        debitis facilis tenetur id aliquam corporis! Molestias?</p>
-                    <button class="common-btn">More</button>
+                    <h2>Empowering Your Digital Journey</h2>
+                    <p>At <strong>HS Tech IT Solutions</strong>, we deliver cutting-edge digital solutions designed to
+                        grow your brand. From social media management to website development, we bring innovation to
+                        every project.</p>
+                    <button class="common-btn">Discover More</button>
                 </div>
 
             </div>
 
         </section>
-        <!---------------------------------------------------
-            About Section End
-        ----------------------------------------------------->
 
+        <section id="courses" class="max-width padding-x">
 
-        <!---------------------------------------------------
-            courses Section Start
-        ----------------------------------------------------->
-        <section id="courses" class="max-width padding-y padding-x">
-
-            <!---------------------------------------------------
-                 courses Section Header
-            ----------------------------------------------------->
             <div class="section-header">
-                <h1>Courses</h1>
+                <h1>Our Courses</h1>
             </div>
 
-            <!---------------------------------------------------
-                 Gallery Images
-            ----------------------------------------------------->
-            <div class="gallery-row flex">
-                <div class="gallery-box"><img src="assets/images/img6.jpg" alt=""></div>
-                <div class="gallery-box"><img src="assets/images/img6.jpg" alt=""></div>
-                <div class="gallery-box"><img src="assets/images/img6.jpg" alt=""></div>
-                <div class="gallery-box"><img src="assets/images/img7.jpg" alt=""></div>
-                <div class="gallery-box"><img src="assets/images/img7.jpg" alt=""></div>
-                <div class="gallery-box"><img src="assets/images/img7.jpg" alt=""></div>
-            </div>
+            <div class="course-container">
+                <div class="content-width">
+                    <div class="slideshow">
+                        <!-- Slideshow Items -->
+                        <div class="slideshow-items">
+                            <div class="item">
+                                <div class="item-image-container">
+                                    <img class="item-image"
+                                        src="assets/images/seo.png"
+                                        alt="img" />
+                                </div>
+                                <!-- Course 1 -->
+                                <div class="item-header">
+                                    <span class="vertical-part"><b>S</b></span>
+                                    <span class="vertical-part"><b>E</b></span>
+                                    <span class="vertical-part"><b>O</b></span>
+                                </div>
+                                <div class="item-description">
+                                    <span class="vertical-part"><b>Learn</b></span>
+                                    <span class="vertical-part"><b>how</b></span>
+                                    <span class="vertical-part"><b>to</b></span>
+                                    <span class="vertical-part"><b>optimize</b></span>
+                                    <span class="vertical-part"><b>websites</b></span>
+                                    <span class="vertical-part"><b>and</b></span>
+                                    <span class="vertical-part"><b>boost</b></span>
+                                    <span class="vertical-part"><b>search</b></span>
+                                    <span class="vertical-part"><b>engine</b></span>
+                                    <span class="vertical-part"><b>rankings</b></span>
+                                    <span class="vertical-part"><b>to</b></span>
+                                    <span class="vertical-part"><b>drive</b></span>
+                                    <span class="vertical-part"><b>more</b></span>
+                                    <span class="vertical-part"><b>traffic</b></span>
+                                    <span class="vertical-part"><b>and</b></span>
+                                    <span class="vertical-part"><b>increase</b></span>
+                                    <span class="vertical-part"><b>visibility</b></span>
+                                    <span class="vertical-part"><b>of</b></span>
+                                    <span class="vertical-part"><b>your</b></span>
+                                    <span class="vertical-part"><b>business.</b></span>
 
+                                    <!-- Additional lines -->
+                                    <span class="vertical-part"><b>Understand</b></span>
+                                    <span class="vertical-part"><b>the</b></span>
+                                    <span class="vertical-part"><b>importance</b></span>
+                                    <span class="vertical-part"><b>of</b></span>
+                                    <span class="vertical-part"><b>keywords</b></span>
+                                    <span class="vertical-part"><b>and</b></span>
+                                    <span class="vertical-part"><b>how</b></span>
+                                    <span class="vertical-part"><b>they</b></span>
+                                    <span class="vertical-part"><b>affect</b></span>
+                                    <span class="vertical-part"><b>search</b></span>
+                                    <span class="vertical-part"><b>engine</b></span>
+                                    <span class="vertical-part"><b>optimization.</b></span>
+
+                                    <span class="vertical-part"><b>Enhance</b></span>
+                                    <span class="vertical-part"><b>your</b></span>
+                                    <span class="vertical-part"><b>knowledge</b></span>
+                                    <span class="vertical-part"><b>of</b></span>
+                                    <span class="vertical-part"><b>SEO</b></span>
+                                    <span class="vertical-part"><b>tools</b></span>
+                                    <span class="vertical-part"><b>to</b></span>
+                                    <span class="vertical-part"><b>track</b></span>
+                                    <span class="vertical-part"><b>and</b></span>
+                                    <span class="vertical-part"><b>analyze</b></span>
+                                    <span class="vertical-part"><b>your</b></span>
+                                    <span class="vertical-part"><b>progress.</b></span>
+                                </div>
+
+                            </div>
+                            <div class="item">
+                                <div class="item-image-container">
+                                    <img class="item-image"
+                                        src="assets/images/content_m.jpg"
+                                        alt="img" />
+                                </div>
+                                <!-- Staggered Header Elements -->
+                                <!-- Course 2 -->
+                                <div class="item-header">
+                                    <span class="vertical-part"><b>C</b></span>
+                                    <span class="vertical-part"><b>o</b></span>
+                                    <span class="vertical-part"><b>n</b></span>
+                                    <span class="vertical-part"><b>t</b></span>
+                                    <span class="vertical-part"><b>e</b></span>
+                                    <span class="vertical-part"><b>n</b></span>
+                                    <span class="vertical-part"><b>t</b></span> <br>
+                                    <span class="vertical-part"><b>M</b></span>
+                                    <span class="vertical-part"><b>a</b></span>
+                                    <span class="vertical-part"><b>r</b></span>
+                                    <span class="vertical-part"><b>k</b></span>
+                                    <span class="vertical-part"><b>e</b></span>
+                                    <span class="vertical-part"><b>t</b></span>
+                                    <span class="vertical-part"><b>i</b></span>
+                                    <span class="vertical-part"><b>n</b></span>
+                                    <span class="vertical-part"><b>g</b></span>
+                                </div>
+                                <div class="item-description">
+                                    <span class="vertical-part"><b>Master</b></span>
+                                    <span class="vertical-part"><b>the</b></span>
+                                    <span class="vertical-part"><b>art</b></span>
+                                    <span class="vertical-part"><b>of</b></span>
+                                    <span class="vertical-part"><b>creating</b></span>
+                                    <span class="vertical-part"><b>compelling</b></span>
+                                    <span class="vertical-part"><b>content</b></span>
+                                    <span class="vertical-part"><b>that</b></span>
+                                    <span class="vertical-part"><b>drives</b></span>
+                                    <span class="vertical-part"><b>engagement</b></span>
+                                    <span class="vertical-part"><b>and</b></span>
+                                    <span class="vertical-part"><b>conversions</b></span>
+                                    <span class="vertical-part"><b>across</b></span>
+                                    <span class="vertical-part"><b>various</b></span>
+                                    <span class="vertical-part"><b>platforms.</b></span>
+
+                                    <!-- Additional lines -->
+                                    <span class="vertical-part"><b>Understand</b></span>
+                                    <span class="vertical-part"><b>the</b></span>
+                                    <span class="vertical-part"><b>importance</b></span>
+                                    <span class="vertical-part"><b>of</b></span>
+                                    <span class="vertical-part"><b>audience</b></span>
+                                    <span class="vertical-part"><b>targeting</b></span>
+
+                                    <span class="vertical-part"><b>Develop</b></span>
+                                    <span class="vertical-part"><b>strategies</b></span>
+                                    <span class="vertical-part"><b>to</b></span>
+                                    <span class="vertical-part"><b>measure</b></span>
+                                    <span class="vertical-part"><b>and</b></span>
+                                    <span class="vertical-part"><b>improve</b></span>
+                                    <span class="vertical-part"><b>content</b></span>
+                                    <span class="vertical-part"><b>performance.</b></span>
+                                </div>
+
+                            </div>
+                            <div class="item">
+                                <div class="item-image-container">
+                                    <img class="item-image" src="assets/images/google_ads.png" alt="img" />
+                                </div>
+                                <!-- Staggered Header Elements -->
+                                <!-- Course 3 -->
+                                <div class="item-header">
+                                    <span class="vertical-part"><b>S</b></span>
+                                    <span class="vertical-part"><b>o</b></span>
+                                    <span class="vertical-part"><b>c</b></span>
+                                    <span class="vertical-part"><b>i</b></span>
+                                    <span class="vertical-part"><b>a</b></span>
+                                    <span class="vertical-part"><b>l</b></span><br>
+                                    <span class="vertical-part"><b>M</b></span>
+                                    <span class="vertical-part"><b>e</b></span>
+                                    <span class="vertical-part"><b>d</b></span>
+                                    <span class="vertical-part"><b>i</b></span>
+                                    <span class="vertical-part"><b>a</b></span> <br>
+                                    <span class="vertical-part"><b>M</b></span>
+                                    <span class="vertical-part"><b>a</b></span>
+                                    <span class="vertical-part"><b>r</b></span>
+                                    <span class="vertical-part"><b>k</b></span>
+                                    <span class="vertical-part"><b>e</b></span>
+                                    <span class="vertical-part"><b>t</b></span>
+                                    <span class="vertical-part"><b>i</b></span>
+                                    <span class="vertical-part"><b>n</b></span>
+                                    <span class="vertical-part"><b>g</b></span>
+                                </div>
+                                <div class="item-description">
+                                    <span class="vertical-part"><b>Learn</b></span>
+                                    <span class="vertical-part"><b>to</b></span>
+                                    <span class="vertical-part"><b>craft</b></span>
+                                    <span class="vertical-part"><b>strategies</b></span>
+                                    <span class="vertical-part"><b>that</b></span>
+                                    <span class="vertical-part"><b>build</b></span>
+                                    <span class="vertical-part"><b>brand</b></span>
+                                    <span class="vertical-part"><b>awareness</b></span>
+                                    <span class="vertical-part"><b>and</b></span>
+                                    <span class="vertical-part"><b>drive</b></span>
+                                    <span class="vertical-part"><b>engagement</b></span>
+                                    <span class="vertical-part"><b>across</b></span>
+                                    <span class="vertical-part"><b>social</b></span>
+                                    <span class="vertical-part"><b>media</b></span>
+                                    <span class="vertical-part"><b>platforms.</b></span>
+
+                                    <!-- Additional lines -->
+                                    <span class="vertical-part"><b>Discover</b></span>
+                                    <span class="vertical-part"><b>how</b></span>
+                                    <span class="vertical-part"><b>to</b></span>
+                                    <span class="vertical-part"><b>utilize</b></span>
+                                    <span class="vertical-part"><b>Facebook,</b></span>
+                                    <span class="vertical-part"><b>Instagram,</b></span>
+                                    <span class="vertical-part"><b>LinkedIn,</b></span>
+                                    <span class="vertical-part"><b>and</b></span>
+                                    <span class="vertical-part"><b>Twitter</b></span>
+                                    <span class="vertical-part"><b>effectively.</b></span>
+
+                                    <span class="vertical-part"><b>Develop</b></span>
+                                    <span class="vertical-part"><b>content</b></span>
+                                    <span class="vertical-part"><b>that</b></span>
+                                    <span class="vertical-part"><b>resonates</b></span>
+                                    <span class="vertical-part"><b>with</b></span>
+                                    <span class="vertical-part"><b>audiences</b></span>
+                                    <span class="vertical-part"><b>and</b></span>
+                                    <span class="vertical-part"><b>encourages</b></span>
+                                    <span class="vertical-part"><b>sharing.</b></span>
+
+                                    <span class="vertical-part"><b>Gain</b></span>
+                                    <span class="vertical-part"><b>insights</b></span>
+                                    <span class="vertical-part"><b>into</b></span>
+                                    <span class="vertical-part"><b>analyzing</b></span>
+                                    <span class="vertical-part"><b>metrics</b></span>
+                                    <span class="vertical-part"><b>and</b></span>
+                                    <span class="vertical-part"><b>improving</b></span>
+                                    <span class="vertical-part"><b>performance.</b></span>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="controls">
+                            <ul>
+                                <li class="control" data-index="0"></li>
+                                <li class="control" data-index="1"></li>
+                                <li class="control" data-index="2"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <button class="common-btn-2 course-btn">
+                Explore More
+            </button>
         </section>
         <!---------------------------------------------------
             Gallery Section End
